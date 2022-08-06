@@ -10,8 +10,7 @@
 </head>
 
 <body>
-    <section class="headertitle">
-        <header>
+        <header class="headertitle">
             <h1>CSS Snippet Cheatsheet</h1>
             <p>Ever have trouble recalling the exact syntax for your favorite
                 CSS code? Give it a permanant home and add it to this page!
@@ -19,10 +18,9 @@
                 code for you to copy
             </p>
         </header>
-    </section>
-    <section class="container">
-        <section class="FlexboxRCG">
 
+    <section class="container">
+        <section class="Flexbox">
             <h3>Flexbox Row</h3>
             <p>Use these properties to create a Flexbox row layout.</p>
             <pre>
@@ -33,7 +31,7 @@
                 }
             </pre>
         </section>
-        <section class="FlexboxRCG">
+        <section class="Flexbox">
             <h3>Flexbox Column</h3>
             <p>Use this to create a Flexbox column layout.</p>
             <pre>
@@ -43,7 +41,7 @@
             }
         </pre>
         </section>
-        <section class="FlexboxRCG">
+        <section class="Flexbox">
             <h3>CSS Grid Layout</h3>
             <p>Build a 12-column layout using CSS Grid.</p>
             <pre>
@@ -54,7 +52,8 @@
             }
         </pre>
         </section>
-        <section class="LinearBoxOverlay">
+
+        <section class="Flexbox">
             <h3>Linear Gradients</h3>
             <p> This will create a background linear gradiant from top to botton</p>
             <pre>
@@ -67,21 +66,24 @@
             }
         </pre>
         </section>
-        <section class="LinearBoxOverlay">
+        <section class="Flexbox">
             <h3>Box Transition Glow</h3>
             <p>Using transition and bos shadows to glow on hover</p>
             <pre>
             .code-card .card-header{
             border-radius: 8px;
             transition: all 0.5s each-in-out;
-            }<br>
-            .code-card:hover, .code-card:hover, .card-header{
-            box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1),
+            }
+
+            .code-card:hover, .code-card:hover, 
+            .card-header{
+            box-shadow: inset 0px 0px 8px 
+            rgba(232, 102, 236, 1),
             0 0 15px rgba(232, 102, 236, 1);
             }
         </pre>
         </section>
-        <section class="LinearBoxOverlay">
+        <section class="Flexbox">
             <h3>Overlay Card with Title</h3>
             <p>User position properties and negative margins to raise elements higer than their natural starting point
             </p>
@@ -93,7 +95,7 @@
         </pre>
         </section>
     </section>
-
+    <footer></footer>
 </body>
 
 </html>

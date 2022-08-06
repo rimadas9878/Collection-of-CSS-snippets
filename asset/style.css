@@ -1,123 +1,98 @@
-*{
+* {
     background-color: rgb(59, 58, 58);
-    margin:0%;
-    padding:0%;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 0%;
+    padding: 0%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-:root{
+
+:root {
     --pretext: white;
     --innergrid: rgb(170, 62, 170);
 }
-body{
+
+body {
     width: 100%;
     line-height: 2;
 }
-.headertitle{
-    text-align: center;
-    color: var(--innergrid);
-}
-.headertitle h1{
+
+
+.headertitle h1 {
+    display: flex;
+    justify-content: space-around;
     font-size: xx-large;
     margin-top: 2%;
     color: var(--innergrid);
+    flex-wrap: wrap;
 }
-.headertitle p{
+
+.headertitle p {
+    text-align: center;
     color: var(--pretext);
     font-size: medium;
-    margin: 0% 20%;
-    padding: 10px 40px 10px 40px;   
-}
-.container{
+    margin: 0% 10%;
+    padding: 10px 40px;
     display: flex;
-    flex-direction: column;
-    width: 20%;
-    margin-left: 10%;
     flex-wrap: wrap;
-    justify-content:space-around;
-    position: relative;
-    font-size: small;
-    grid-template-columns: 50px 50px 50px;
-    
 }
 
-.FlexboxRCG{
-    border: 1px dashed white;
-    margin: 20px 20px;
-    display: grid;
-    flex-direction: column;
-    width: 100%;
-   
-    
+.container {
+    display: flex;
+    flex: 2;
+    flex-wrap: wrap;
+    font-size: small;
+    justify-content:space-around;
+    flex-direction: row;
 }
-.FlexboxRCG h3{
+
+.Flexbox {
+    border: 1px dashed white;
+    margin: 20px 10px;
+    width: 30%;
+}
+
+.Flexbox h3 {
+    font-size: x-large;
     margin: -20px 20px;
     padding: 10px 10px;
     border: 2px solid white;
     border-radius: 10px;
     color: var(--innergrid);
-
+    
 }
-.FlexboxRCG p{
+
+.Flexbox p {
     margin: 20px 20px;
     padding: 5px 5px;
-    display: flex;
-    flex-wrap: wrap;
+    font-size: medium;
     color: var(--innergrid);
-    
-
 }
 
-.FlexboxRCG pre{
-
-    background-color: var(--innergrid);
-    color: var(--pretext);
+.Flexbox pre {
+    font-size: medium;
     margin: 10px 20px;
     border-radius: 10px;
-    display: grid;
-    flex-wrap: wrap;
-    
-}
-
-.LinearBoxOverlay{
-    border: 1px dashed white;
-    margin: 20px 20px;
-    height: auto;
-
-}
-.LinearBoxOverlay h3{
-    margin: -20px 20px;
-    padding: 10px 10px;
-    border: 2px solid white;
-    border-radius: 10px;
-    color: var(--innergrid);
-}
-.LinearBoxOverlay p{
-    margin: 20px 20px;
-    padding: 5px 5px;
-    color: var(--innergrid);
-    display: flex;
-    flex-wrap: wrap;
-
-}
-
-.LinearBoxOverlay pre{
-
     background-color: var(--innergrid);
-    margin: 20px 20px;
-    padding: 5px 5px;
-    border-radius: 10px;
     color: var(--pretext);
     display: flex;
     flex-wrap: wrap;
 
 }
-footer h3{
+
+footer h3 {
     text-align: center;
     display: inline;
     align-content: center;
     color: var(--innergrid);
 }
-.red{
+
+.red {
     color: red;
-    
+
+}
+@media screen and (max-width:992px) {
+    .Flexbox{width: 50%;}
+
+}
+@media screen and (max-width:768px) {
+    .Flexbox{width: 100%;}
 }
