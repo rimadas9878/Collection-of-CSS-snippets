@@ -1,0 +1,123 @@
+*{
+    background-color: rgb(59, 58, 58);
+    margin:0%;
+    padding:0%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+:root{
+    --pretext: white;
+    --innergrid: rgb(170, 62, 170);
+}
+body{
+    width: 100%;
+    line-height: 2;
+}
+.headertitle{
+    text-align: center;
+    color: var(--innergrid);
+}
+.headertitle h1{
+    font-size: xx-large;
+    margin-top: 2%;
+    color: var(--innergrid);
+}
+.headertitle p{
+    color: var(--pretext);
+    font-size: medium;
+    margin: 0% 20%;
+    padding: 10px 40px 10px 40px;   
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-left: 10%;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    position: relative;
+    font-size: small;
+    grid-template-columns: 50px 50px 50px;
+    
+}
+
+.FlexboxRCG{
+    border: 1px dashed white;
+    margin: 20px 20px;
+    display: grid;
+    flex-direction: column;
+    width: 100%;
+   
+    
+}
+.FlexboxRCG h3{
+    margin: -20px 20px;
+    padding: 10px 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: var(--innergrid);
+
+}
+.FlexboxRCG p{
+    margin: 20px 20px;
+    padding: 5px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--innergrid);
+    
+
+}
+
+.FlexboxRCG pre{
+
+    background-color: var(--innergrid);
+    color: var(--pretext);
+    margin: 10px 20px;
+    border-radius: 10px;
+    display: grid;
+    flex-wrap: wrap;
+    
+}
+
+.LinearBoxOverlay{
+    border: 1px dashed white;
+    margin: 20px 20px;
+    height: auto;
+
+}
+.LinearBoxOverlay h3{
+    margin: -20px 20px;
+    padding: 10px 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: var(--innergrid);
+}
+.LinearBoxOverlay p{
+    margin: 20px 20px;
+    padding: 5px 5px;
+    color: var(--innergrid);
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.LinearBoxOverlay pre{
+
+    background-color: var(--innergrid);
+    margin: 20px 20px;
+    padding: 5px 5px;
+    border-radius: 10px;
+    color: var(--pretext);
+    display: flex;
+    flex-wrap: wrap;
+
+}
+footer h3{
+    text-align: center;
+    display: inline;
+    align-content: center;
+    color: var(--innergrid);
+}
+.red{
+    color: red;
+    
+}
