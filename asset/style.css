@@ -1,13 +1,16 @@
+:root {
+    --pretext: white;
+    --innergrid: rgb(170, 62, 170);
+    --gridcolor: linear-gradient(
+        rgba(232, 102, 236, 0.3),
+        rgba(232, 102, 236, 0.6)
+        );
+    }
 * {
     background-color: rgb(59, 58, 58);
     margin: 0%;
     padding: 0%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-:root {
-    --pretext: white;
-    --innergrid: rgb(170, 62, 170);
 }
 
 body {
@@ -40,14 +43,22 @@ body {
     flex: 2;
     flex-wrap: wrap;
     font-size: small;
-    justify-content:space-around;
+    justify-content: space-around;
     flex-direction: row;
+}
+
+.Flexbox:hover, .Flexbox:hover h3, .Flexbox:hover pre
+{
+    box-shadow: inset 0px 0px 8px 
+    rgba(232, 102, 236, 1),
+    0 0 15px rgba(232, 102, 236, 1);
 }
 
 .Flexbox {
     border: 1px dashed white;
     margin: 20px 10px;
     width: 30%;
+
 }
 
 .Flexbox h3 {
@@ -57,7 +68,7 @@ body {
     border: 2px solid white;
     border-radius: 10px;
     color: var(--innergrid);
-    
+
 }
 
 .Flexbox p {
@@ -71,28 +82,40 @@ body {
     font-size: medium;
     margin: 10px 20px;
     border-radius: 10px;
-    background-color: var(--innergrid);
+    background: var(--gridcolor);
     color: var(--pretext);
     display: flex;
     flex-wrap: wrap;
 
 }
 
-footer h3 {
+
+.Flexbox:hover .Flexbox h3:hover .Flexbox pre:hover {
+    border-radius: 8px;
+    transition: all 0.5s each-in-out;
+}
+
+.Flexbox:hover .Flexbox h3:hover .Flexbox pre:hover {
+    box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1),
+        0 0 15px rgba(232, 102, 236, 1);
+}
+
+footer h5 {
     text-align: center;
-    display: inline;
-    align-content: center;
+    font-size: xx-large;
     color: var(--innergrid);
 }
 
-.red {
-    color: red;
 
-}
 @media screen and (max-width:992px) {
-    .Flexbox{width: 50%;}
+    .Flexbox {
+        width: 50%;
+    }
 
 }
+
 @media screen and (max-width:768px) {
-    .Flexbox{width: 100%;}
+    .Flexbox {
+        width: 100%;
+    }
 }
